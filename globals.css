@@ -124,10 +124,11 @@ button.btn {
   outline: 0;
   border: 2px solid var(--black_color);
   border-radius: 8px;
-  padding: 10px 12px;
+  padding: 10px 20px;
   transition: var(--trans);
   font-size: 14px;
   text-transform: capitalize;
+  text-wrap: nowrap;
 }
 
 button.btn.fit {
