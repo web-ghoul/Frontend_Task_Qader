@@ -113,7 +113,6 @@ section.main .contain .content p {
 section.main .contain .lands {
   position: absolute;
   right: 40px;
-  gap: 40px;
   z-index: 0;
 }
 
