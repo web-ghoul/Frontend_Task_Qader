@@ -555,6 +555,7 @@ section.discover .contain .content button {
 
   section.discover .contain .content {
     bottom: 60px;
+    text-align: center;
   }
 }
 
@@ -1042,8 +1043,8 @@ section.work .contain:last-child .box .icon:hover img {
   }
 
   section.work .box .icon {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     border-radius: 8px;
   }
 
@@ -1382,7 +1383,6 @@ section.prices .contain .prices_boxes .price_box .price_list li img {
   }
 
 }
-
 
 @media (max-width:540px) {
   section.prices .contain .head {
