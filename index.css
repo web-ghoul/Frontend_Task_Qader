@@ -1165,6 +1165,11 @@ section.prices .contain .prices_boxes .price_box .price_list li {
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
+  transition: var(--trans);
+}
+
+section.prices .contain .prices_boxes .price_box .price_list li:hover {
+  color: var(--green_color);
 }
 
 section.prices .contain .prices_boxes .price_box .price_list li h6 {
