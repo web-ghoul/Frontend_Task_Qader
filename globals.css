@@ -1,0 +1,295 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --primary_color: #DCEDFF;
+  --secondary_color: #DCFFEC;
+  --white_color: #fff;
+  --black_color: #111;
+  --green_color: #2dde98;
+  --pink_color: #FFF0DC;
+  --purple_color: #F4DCFF;
+  --gray_color: #ddd;
+  --trans: all ease-in-out 0.3s;
+  --ubunut_font: "Ubuntu", sans-serif;
+  --header_shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+body {
+  background-color: var(--white_color);
+  font-family: var(--ubunut_font) !important;
+}
+
+main .container {
+  position: relative;
+}
+
+
+/* Start Global Component */
+
+/*Typography*/
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 20px;
+}
+
+
+/*Flex & Grid Box*/
+.flex {
+  display: flex !important;
+}
+
+.grid {
+  display: grid !important;
+}
+
+.jcc {
+  justify-content: center !important;
+}
+
+.jcs {
+  justify-content: stretch !important;
+}
+
+.jcfs {
+  justify-content: flex-start !important;
+}
+
+.jcfe {
+  justify-content: flex-end !important;
+}
+
+.jcsp {
+  justify-content: space-between !important;
+}
+
+.aic {
+  align-items: center !important;
+}
+
+.aifs {
+  align-items: flex-start !important;
+}
+
+.aife {
+  align-items: flex-end !important;
+}
+
+.g-5 {
+  gap: 5px;
+}
+
+.g-10 {
+  gap: 10px;
+}
+
+.g-20 {
+  gap: 20px;
+}
+
+.g-30 {
+  gap: 30px;
+}
+
+.g-40 {
+  gap: 40px;
+}
+
+.g-50 {
+  gap: 50px;
+}
+
+.g-60 {
+  gap: 60px;
+}
+
+
+
+/*Button*/
+button.btn {
+  outline: 0;
+  border: 2px solid var(--black_color);
+  border-radius: 8px;
+  padding: 10px 12px;
+  transition: var(--trans);
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+button.btn.fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+button.btn.no_border {
+  border: none;
+}
+
+button.btn:hover {
+  cursor: pointer;
+}
+
+button.btn.primary {
+  color: var(--white_color);
+  background-color: var(--black_color);
+}
+
+button.btn.primary:hover {
+  color: var(--black_color);
+  background-color: var(--white_color);
+}
+
+button.btn.secondary {
+  color: var(--black_color);
+  background-color: var(--white_color);
+}
+
+button.btn.secondary:hover {
+  color: var(--white_color);
+  background-color: var(--black_color);
+}
+
+
+/*Input & Textarea*/
+input,
+textarea {
+  outline: none;
+  border: 2px solid var(--gray_color);
+  border-radius: 6px;
+  padding: 10px;
+  background-color: var(--white_color);
+  font-size: 15px;
+  width: 100%;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #ABB8F8;
+}
+
+
+
+/*Contain*/
+.contain {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.contain.top_down {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+
+/*Logo*/
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.logo.light {
+  color: var(--white_color);
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.logo h5 {
+  font-size: 26px;
+}
+
+.logo h5 span {
+  color: var(--green_color);
+}
+
+
+/*List*/
+.list {
+  display: grid;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  list-style: none;
+}
+
+.list li {
+  transition: var(--trans);
+  color: var(--gray_color)
+}
+
+.list li:hover {
+  text-decoration: underline;
+  color: var(--green_color);
+  cursor: pointer;
+}
+
+
+/*Responsive*/
+@media (max-width:1200px) {
+  .contain {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+
+  .contain.top_down {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
+@media (max-width:992px) {
+  .contain {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .contain.top_down {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width:768px) {
+  .contain {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .contain.top_down {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width:540px) {
+  .contain {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .contain.top_down {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+/* End Global Component */
